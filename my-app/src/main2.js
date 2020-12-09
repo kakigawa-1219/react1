@@ -107,13 +107,12 @@ class Main2 extends Component{
 
                     {(() => {
                             var json = require('./colum.json');
+                            var json_1 = []
                             for (let i = 0; i < 5; i++) {
-                        return<div id="colum">
-                                <div className="time">{json[i].time}</div>
-                                <div className="category">{json[i].category}</div>
-                            <div className="colum_text">{i}</div>
-                                </div>;
+                                json_1.push(<div id="colum"><div className="time">{json[i].time}</div>
+                                <div className="category">{json[i].category}</div></div>);
                             }
+                        return{json_1}
                            
                             })()}
                             
