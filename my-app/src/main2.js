@@ -2,6 +2,7 @@ import React , {Component} from 'react'
 
 class Main2 extends Component{
     render(){
+        
         return(
          <>
          <div id="main2">
@@ -93,7 +94,7 @@ class Main2 extends Component{
                 </div>
                 </div>
                 <div id="main2_right_bottom">
-                    <div id="tab">
+                  <div id="tab">
                         <ul>
                             <li>新着情報</li>
                             <li>ニュースリリース</li>
@@ -101,11 +102,22 @@ class Main2 extends Component{
                             <li>お知らせ</li>
                         </ul>
                     </div>
-                    <div id="colum">
-                        <div className="time"></div>
-                        <div className="category"></div>
-                        <div className="colum_text"></div>
-                    </div>
+
+
+
+                    {(() => {
+                            var json = require('./colum.json');
+                            for (let i = 0; i < 5; i++) {
+                        return<div id="colum">
+                                <div className="time">{json[i].time}</div>
+                                <div className="category">{json[i].category}</div>
+                            <div className="colum_text">{i}</div>
+                                </div>;
+                            }
+                           
+                            })()}
+                            
+                    
 
                 </div>
 
