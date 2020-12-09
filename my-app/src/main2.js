@@ -47,8 +47,9 @@ class Main2 extends Component{
 
             </div>
             <div id="main2_right">
+
                 <div id="main2_right_top">
-                <div className="main2-col">
+                <div className="main2-col main2-col1">
                     <ul>
                         <h2>個人のお客様</h2>
 
@@ -61,7 +62,7 @@ class Main2 extends Component{
                     </ul>
                 </div>
 
-                <div className="main2-col">
+                <div className="main2-col main2-col2">
                     <ul>
                         <h2>法人のお客様</h2>
 
@@ -74,7 +75,7 @@ class Main2 extends Component{
                     </ul>
                 </div>
 
-                <div className="main2-col">
+                <div className="main2-col main2-col3">
                     <ul>
                         <h2>株主・投資家の皆様</h2>
 
@@ -83,7 +84,7 @@ class Main2 extends Component{
                     </ul>
                 </div>
 
-                <div className="main2-col">
+                <div className="main2-col main2-col4">
                     <ul>
                         <h2>採用情報</h2>
 
@@ -93,6 +94,8 @@ class Main2 extends Component{
                     </ul>
                 </div>
                 </div>
+
+
                 <div id="main2_right_bottom">
                   <div id="tab">
                         <ul>
@@ -109,8 +112,24 @@ class Main2 extends Component{
                             var json = require('./colum.json');
                             var json_1 = []
                             for (let i = 0; i < json.length; i++) {
-                                json_1.push(<div id="colum"><div className="time">{json[i].time}</div>
-                                <div className="category">{json[i].category}</div></div>);
+                              
+                                
+                                if(json[i].category=="ニュースリリース"){
+                                    var classname="category_news";
+                                }
+                                if(json[i].category=="キャンペーン"){
+                                    var classname="category_campaign";
+                                }
+                                if(json[i].category=="お知らせ"){
+                                    var classname="category_notice";
+                                }
+                            
+                                json_1.push(
+                                <div className="json_colum">
+                                <div className="json_time">{json[i].time}</div>
+                                <div className={classname}>{json[i].category}</div>
+                                <div className="json_text"><u>{json[i].text}</u></div>
+                                </div>);
                             }
                         return<div>{json_1}</div>;
                            

@@ -4,8 +4,8 @@ class Footer extends Component{
     render(){
         return(
          <>
-         <footer>
-         <div id="footer1">
+         <div id="footer0">
+         <div id="footer_1">
              <ul id="fot_1">
                  <h3>個人のお客様</h3>
                  <li><a href="#">普通預金</a></li>
@@ -49,16 +49,20 @@ class Footer extends Component{
                  <li><a href="#">お問い合わせ先</a></li>
              </ul>
          </div>
-         <div id="footer2">
+         <div id="footer_2">
              <ul>
                  <li><a href="#">お客様の個人情報保護法について</a></li>
-                 <li><a href="#">金融商品勧誘商品</a></li>
+                 <li><a href="#">金融商品勧誘方針</a></li>
                  <li><a href="#">法人等のお客様の情報について</a></li>
                  <li><a href="#">本サイトのご利用にあたって</a></li>
                  <li><a href="#">反社会勢力に対する基本方針</a></li>
              </ul>
          </div>
+         </div>
 
+
+
+         <footer>
          <div id="copyright">
            <p><small>Copyright©︎2018 Seraku Banking Corporation.All Rights Reserved.</small></p>
          </div>
