@@ -46,7 +46,71 @@ class Main2 extends Component{
 
             </div>
             <div id="main2_right">
-                b
+                <div id="main2_right_top">
+                <div className="main2-col">
+                    <ul>
+                        <h2>個人のお客様</h2>
+
+                        <li>＞口座をひらく</li>
+                        <li>＞住宅ローン</li>
+                        <li>＞投資信託</li>
+                        <li>＞外貨預金</li>
+                        <li>＞バンクイック</li>
+                        <li>＞キャンペーン一覧</li>
+                    </ul>
+                </div>
+
+                <div className="main2-col">
+                    <ul>
+                        <h2>法人のお客様</h2>
+
+                        <li>＞口座をひらく</li>
+                        <li>＞でんさい</li>
+                        <li>＞CSRの取り組み</li>
+                        <li>＞地球環境問題への対応</li>
+                        <li>＞CSRの取り組み</li>
+                        <li>＞Global Website</li>
+                    </ul>
+                </div>
+
+                <div className="main2-col">
+                    <ul>
+                        <h2>株主・投資家の皆様</h2>
+
+                        <li>＞決算広告</li>
+                        <li>＞社債情報</li>
+                    </ul>
+                </div>
+
+                <div className="main2-col">
+                    <ul>
+                        <h2>採用情報</h2>
+
+                        <li>＞新卒採用</li>
+                        <li>＞中途採用</li>
+                        <li>＞海外現地採用</li>
+                    </ul>
+                </div>
+                </div>
+                <div id="main2_right_bottom">
+                    <div id="tab">
+                        <ul>
+                            <li>新着情報</li>
+                            <li>ニュースリリース</li>
+                            <li>キャンペーン</li>
+                            <li>お知らせ</li>
+                        </ul>
+                    </div>
+                    <div id="colum">
+                        <div className="time"></div>
+                        <div className="category"></div>
+                        <div className="colum_text"></div>
+                    </div>
+
+                </div>
+
+
+
             </div>
          </div>
          

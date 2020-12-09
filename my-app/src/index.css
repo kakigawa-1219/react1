@@ -266,8 +266,31 @@ button{
   }
 
 
+/*メイン2　right               */
+
+.main2-col:nth-child(even){
+  
+}
+ 
+  .main2-col li:nth-child(even), .main2-col h2{ 
+    clear: both;
+  }
+  .main2-col li:nth-child(even){ 
+    
+  }
+  .main2-col li{ 
+    float: left;
+    width: 150px;
+ }
 
 
+
+
+
+
+
+
+  
   /*フッター                */
   footer{
     height: 550px;
