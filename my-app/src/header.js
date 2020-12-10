@@ -4,7 +4,7 @@ class Header extends Component{
     render(){
         return(
          <>
-         <h1><img src="./images/logo.png" alt=""></img> </h1>
+         <h1><img src="./images/logo.png" alt="" id="link-top"></img> </h1>
         
          <div id="code">金融機関コード：0917</div>
          <div id="font-size">

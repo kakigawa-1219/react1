@@ -1,9 +1,10 @@
 import React , {Component} from 'react'
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 class Footer extends Component{
     render(){
         return(
          <>
+         
          <div id="footer0">
          <div id="footer_1">
              <ul id="fot_1">
@@ -61,7 +62,7 @@ class Footer extends Component{
          </div>
 
 
-
+         <AnchorLink href="#link-top" offset="30" className="link-button">topへ移動</AnchorLink>
          <footer>
          <div id="copyright">
            <p><small>Copyright©︎2018 Seraku Banking Corporation.All Rights Reserved.</small></p>
@@ -69,7 +70,9 @@ class Footer extends Component{
          </footer>
          
          </>
+         
         )
+
     }
  
 }

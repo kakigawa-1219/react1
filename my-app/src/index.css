@@ -316,11 +316,15 @@ button{
     height: 650px;
 }
 
-#tab{
+.tabs{
     height: 63px;
     margin-bottom: 39px;
 }
-#tab li{
+.tabs ul{
+    height: 63px;
+    margin-bottom: 39px;
+}
+.tab{
     height: 63px;
     width: 211px;
     text-align: center;
@@ -334,10 +338,10 @@ button{
     float: left;
 }
 
-#tab li:not(:last-child){
+.tab:not(:last-child){
     border-right:1px solid #ddd;
     }
-#tab li:last-child{
+.tab:last-child{
     float: both;
 }
 .json_colum:first-child{
@@ -464,4 +468,21 @@ button{
     justify-content: center;
     color: #ffffff;
     background-color: rgb(6, 6, 135);
+  }
+
+
+  .link-button{
+      margin-bottom:150px;
+      color: #ffffff;
+      right:0;
+      position: absolute;
+  }
+  
+  
+
+
+
+
+  #a{
+      height: 1000px;
   }

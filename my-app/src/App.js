@@ -4,12 +4,16 @@ import Nav from './nav.js';
 import Main1 from './main1.js';
 import Main2 from './main2.js';
 import Footer from './footer.js';
+import DropDownMenu from './DropDown.js'
+import Sample from './sample.js'
 class App extends Component {
   render() {
     return (
         <>
+        <Sample />
       <div className="container container1">
       <Header />
+      <DropDownMenu />
     </div>
     <div className="container container2">
       <Nav />
@@ -23,6 +27,7 @@ class App extends Component {
     <div className="container container5">
       <Footer />
     </div>
+    
     </>
     )
   }
