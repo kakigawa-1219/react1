@@ -9,9 +9,6 @@ class Main1 extends Component{
         return(
          <>
          <div id="main1">
-        
-
-
          <div id="main-image">
          
          {(() => {   
@@ -23,9 +20,12 @@ class Main1 extends Component{
                            );
                        },
                     dots:true,
+                    dotsClass: "slick-dots slick-thumb",
                     speed: 500,
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    autoplay:true,
+                    autoplaySpeed:5000,
                    nextArrow:<img src="./images/arrow_right.png" alt=""></img>,
                    prevArrow:<img src="./images/arrow_left.png" alt=""></img>,
                      };

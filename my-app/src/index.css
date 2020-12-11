@@ -80,11 +80,11 @@ ul{
 
 
 
-nav li:not(:last-child){
+.nav-item:not(:last-child){
     border-right:2px solid #ddd;
     }
 
-
+.
 
 
 
@@ -106,7 +106,8 @@ nav li:not(:last-child){
    
 }
 .thumb_list{
-
+    opacity: 80%;
+filter: grayscale(70%);
 }
 .slick-dots li{
     float: left;
