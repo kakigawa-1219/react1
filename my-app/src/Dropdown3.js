@@ -1,21 +1,19 @@
 import React,{useState} from 'react';
 import './Dropdown.css';
 import { Link } from 'react-router-dom';
-/*  Dropdown~Dropdown5　まとめる予定 */
-function Dropdown(){
+
+function Dropdown3(){
   const [click, setClick] =useState(false);
   const handleClick = () => setClick(!click);
   return(
     <>
+
     <ul onClick={handleClick} className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}>
-      <li>普通預金</li>
-      <li> 定期預金・積立</li>
-      <li> 外貨預金</li>
-      <li> 外債</li>
-      <li> ファンドラップ</li>
-      <li> 個人向け国債</li>
-      <li> 退職金運用のご案内</li>
+      <li>せらくグループの概要</li>
+      <li> 決算公告</li>
+      <li> 社債情報</li>
     </ul>
+
 
   
     </>
@@ -24,4 +22,4 @@ function Dropdown(){
  
 
  
-export default Dropdown
+export default Dropdown3

@@ -78,18 +78,7 @@ ul{
     padding: 0;
 }
 
-.menu-list{
-    float: left;
-    width: 250px;
-    height: 47px;
-    background-color: rgb(6, 6, 135);
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-}
-.menu-list-text{
-    margin: auto;
-}
+
 
 nav li:not(:last-child){
     border-right:2px solid #ddd;
@@ -117,23 +106,27 @@ nav li:not(:last-child){
    
 }
 .thumb_list{
-    float: left;
-   
+
 }
-.arrow{
+.slick-dots li{
+    float: left;
+    height: 95px;
+}
+.slick-arrow{
     position: absolute;
     width: 33px;
     height: 55px;
     top: 45%;
 }
-.arrow_left{ 
+.slick-prev{ 
     left: 1%;
+    z-index: 1;
 }
-.arrow_right{ 
+.slick-next{ 
     right: 1%;
 }
 
-.arrow img{
+.slick-arrow img{
     width: 33px;
     height: 55px;
 }
